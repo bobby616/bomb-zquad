@@ -270,18 +270,104 @@
 
   <!-- Page calculations -->
   <div id="show-calculations" class="view" style="display:none">
-    <h1>Here we will calculate calories</h1>
 
-    <form id="Calorie-calculator">
-      Age: <input id='yes' type="text" name="age"><br>
-      Weight in kilograms: <input type="text" name="kilos"><br>
-      Gender: <form action="" method="post">
-        <input type="radio" name="option" value="Male" checked="checked" /> Male
-        <input type="radio" name="option" value="Female" /> Female
-      </form>
+    <div class="container-fluid bg-light py-3">
+      
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body">
+            <h3 class="text-center mb-4">Calorie calculator: </h3>
 
-    </form>
-    <button id="buton" onclick="myFunction()">Submit</button>
+            <fieldset>
+              <div class="form-group has-error">
+
+
+                <div class="fl w-100">
+                  <div class="fl w-25 pa2">Gender</div>
+                  <div class="fl w-50 fv-plugins-icon-container"><label for="genderMale" class="lh-copy mr4"><input
+                        class="mr2" type="radio" name="gender" id="genderMale" value="male"> Male</label><i data-field="gender"
+                      class="fv-plugins-icon fv-plugins-icon-check"></i>
+                    <label for="genderFemale" class="lh-copy mr4"><input class="mr2" type="radio" name="gender" id="genderFemale"
+                        value="female"> Female</label>
+                    <label for="genderOther" class="lh-copy"><input class="mr2" type="radio" name="gender" id="genderOther"
+                        value="other"> Other</label>
+                    <div class="fv-plugins-message-container"></div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="form-group has-success">
+                <input class="form-control input-lg" placeholder="Age" type="text">
+              </div>
+              <div class="form-group has-success">
+                <input class="form-control input-lg" placeholder="Kilograms" type="text">
+              </div>
+
+              <div>
+                <input class="btn btn-lg btn-primary btn-block" value="Calculate:" type="submit">
+              </div>
+
+            </fieldset>
+
+            <br>
+            <div class="form-group has-success">
+              <input class="form-control input-lg" placeholder="Result" type="text">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid bg-light py-3">
+      
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body">
+            <h3 class="text-center mb-4">Calorie calculator: </h3>
+
+            <fieldset>
+              <div class="form-group has-error">
+
+
+                <div class="fl w-100">
+                  <div class="fl w-25 pa2">Gender</div>
+                  <div class="fl w-50 fv-plugins-icon-container"><label for="genderMale" class="lh-copy mr4"><input
+                        class="mr2" type="radio" name="gender" id="genderMale" value="male"> Male</label><i data-field="gender"
+                      class="fv-plugins-icon fv-plugins-icon-check"></i>
+                    <label for="genderFemale" class="lh-copy mr4"><input class="mr2" type="radio" name="gender" id="genderFemale"
+                        value="female"> Female</label>
+                    <label for="genderOther" class="lh-copy"><input class="mr2" type="radio" name="gender" id="genderOther"
+                        value="other"> Other</label>
+                    <div class="fv-plugins-message-container"></div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="form-group has-success">
+                <input class="form-control input-lg" placeholder="Age" type="text">
+              </div>
+              <div class="form-group has-success">
+                <input class="form-control input-lg" placeholder="Kilograms" type="text">
+              </div>
+
+              <div>
+                <input class="btn btn-lg btn-primary btn-block" value="Calculate:" type="submit">
+              </div>
+
+            </fieldset>
+
+            <br>
+            <div class="form-group has-success">
+              <input class="form-control input-lg" placeholder="Result" type="text">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
 
   </div>
 

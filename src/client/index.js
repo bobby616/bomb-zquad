@@ -1,4 +1,7 @@
 import $ from 'jquery';
+import {
+    caloriesFunc
+} from '../calculations';
 
 $(document).ready(function () {
     console.log('Roskata e pich');
@@ -63,6 +66,20 @@ $(document).ready(function () {
         }
 
         $("#result-calc-id").val(result);
+    });
+
+    // calculator for calories
+
+    $('#submit').on('click', function () {
+        const gender = $("input[type=radio][name=gender]:checked").val();
+        let age = $('#ageId').val();
+        let kilograms = $('#kilogramsId').val();
+
+        age = parseInt(age, 10);
+        kilograms = parseInt(kilograms, 10);
+
+        let result = caloriesFunc(gender, age, kilograms);
+        $('#result').val(result);
     });
 
 });

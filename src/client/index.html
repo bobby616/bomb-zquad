@@ -271,8 +271,9 @@
   <!-- Page calculations -->
   <div id="show-calculations" class="view" style="display:none">
 
+    <!-- First Calculator -->
     <div class="container-fluid bg-light py-3">
-      
+
       <div class="row">
         <div class="col-md-6 mx-auto">
           <div class="card card-body">
@@ -319,58 +320,83 @@
       </div>
     </div>
 
-
+    <!-- Second Calculator -->
     <div class="container-fluid bg-light py-3">
-      
       <div class="row">
         <div class="col-md-6 mx-auto">
           <div class="card card-body">
-            <h3 class="text-center mb-4">Calorie calculator: </h3>
+            <h3 class="text-center mb-4">Water calculator per day: </h3>
 
             <fieldset>
-              <div class="form-group has-error">
-
-
-                <div class="fl w-100">
-                  <div class="fl w-25 pa2">Gender</div>
-                  <div class="fl w-50 fv-plugins-icon-container"><label for="genderMale" class="lh-copy mr4"><input
-                        class="mr2" type="radio" name="gender" id="genderMale" value="male"> Male</label><i data-field="gender"
-                      class="fv-plugins-icon fv-plugins-icon-check"></i>
-                    <label for="genderFemale" class="lh-copy mr4"><input class="mr2" type="radio" name="gender" id="genderFemale"
-                        value="female"> Female</label>
-                    <label for="genderOther" class="lh-copy"><input class="mr2" type="radio" name="gender" id="genderOther"
-                        value="other"> Other</label>
-                    <div class="fv-plugins-message-container"></div>
-                  </div>
-                </div>
-
+              <div class="form-group has-success">
+                <input id="water-calc-id" class="form-control input-lg" placeholder="Age" type="number" required="">
               </div>
               <div class="form-group has-success">
-                <input class="form-control input-lg" placeholder="Age" type="text">
-              </div>
-              <div class="form-group has-success">
-                <input class="form-control input-lg" placeholder="Kilograms" type="text">
+                <input id="kilos-calc-id" class="form-control input-lg" placeholder="Kilograms" type="number" required="">
               </div>
 
               <div>
-                <input class="btn btn-lg btn-primary btn-block" value="Calculate:" type="submit">
+                <input id="calc-water-submit-id" class="btn btn-lg btn-primary btn-block" value="Calculate:" type="submit">
               </div>
-
             </fieldset>
 
             <br>
             <div class="form-group has-success">
-              <input class="form-control input-lg" placeholder="Result" type="text">
+              <input id="result-calc-id" class="form-control input-lg" placeholder="Result" type="text">
             </div>
 
           </div>
         </div>
       </div>
     </div>
-
 
   </div>
 
+
+  <!-- TESTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT -->
+
+
+  <form method="post">
+    <div class="form-group row">
+      <label for="inputCustom" class="col-sm-2 col-form-label">Custom</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control form-control-danger" id="inputCustom" placeholder="Custom input">
+        <small class="text-muted"></small>
+      </div>
+    </div>
+    <div class="form-group row has-danger">
+      <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control form-control-danger" id="inputEmail" placeholder="Email">
+        <small class="text-muted" style="display: block;">Must be 7-20 characters long.</small>
+      </div>
+    </div>
+    <div class="form-group row has-danger">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control form-control-danger" id="inputPassword" placeholder="Password">
+        <small class="text-muted" style="display: block;">Must be 7-20 characters long.</small>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-sm-2">Checkbox</label>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Check me out
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="offset-sm-2 col-sm-10">
+        <button type="button" id="submit" class="btn btn-primary">Sign in or Send</button>
+      </div>
+    </div>
+  </form>
+
+
+  <!-- TESTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT -->
 
   <!-- Footer -->
   <footer class="py-2 bg-dark">
@@ -381,19 +407,7 @@
 
   </footer>
 
-
   <!-- Bootstrap core JavaScript -->
-  <script>
-    function myFunction() {
-      let data = document.getElementById('Calorie-calculator');
-      document.getElementById('yes').innerHTML = "vuevwer";
-      let arr = [];
-      Array.from(data).forEach(element => {
-        arr.push(element.value)
-      });
-      console.log(arr);
-    }
-  </script>
   <script src="/src/libraries/jquery/jquery.min.js"></script>
   <script src="/src/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/dist/bundle.js"></script>

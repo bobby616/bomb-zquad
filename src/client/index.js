@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import {calculator} from 'calculator.js';
 
 $(document).ready(function () {
     console.log('Roskata e pich');
@@ -32,6 +31,38 @@ $(document).ready(function () {
         $('#calc').addClass('nav-item active');
         $('div.view').hide();
         $('#show-calculations').show();
+    });
+
+    $("#calc-water-submit-id").on("click", function () {
+        const age = $("#water-calc-id").val();
+        const kilos = $("#kilos-calc-id").val();
+        console.log(typeof (Number(age)));
+        
+
+
+        if (age === null || age.length === 0 || (typeof (Number(age)) !== "number")) {
+            throw new Error("Invalid age!");
+        }
+
+        if (kilos === null || kilos.length === 0 || typeof (Number(age)) !== "number") {
+            throw new Error("Invalid kilos!");
+        }
+
+        let result = 0;
+
+        if (age >= 0 && age < 16) {
+            result = kilos * 0.035;
+        } else if (age < 31) {
+            result = kilos * 0.040;
+        } else if (age < 55) {
+            result = kilos * 0.035;
+        } else if (age < 66) {
+            result = kilos * 0.030;
+        } else {
+            result = kilos * 0.020;
+        }
+
+        $("#result-calc-id").val(result);
     });
 
 });

@@ -4,7 +4,8 @@ import {
 } from '../calculations';
 
 $(document).ready(function () {
-    console.log('Roskata e pich');
+    console.log('dsdsadadasdasdasdasdas e pich');
+    console.log('dsdsadadasdasdsadas e pich');
 
     // back to Home
     $('#exercises').on('click', function () {
@@ -40,7 +41,7 @@ $(document).ready(function () {
         const age = $("#water-calc-id").val();
         const kilos = $("#kilos-calc-id").val();
         console.log(typeof (Number(age)));
-        
+
 
 
         if (age === null || age.length === 0 || (typeof (Number(age)) !== "number")) {

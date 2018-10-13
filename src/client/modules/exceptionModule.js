@@ -10,7 +10,14 @@ const InvalidWeightException = function () {
     };
 };
 
+const InvalidGenderException = function () {
+    return {
+        error: "Select a gender!"
+    };
+};
+
 export {
     InvalidAgeException,
-    InvalidWeightException
+    InvalidWeightException,
+    InvalidGenderException,
 };

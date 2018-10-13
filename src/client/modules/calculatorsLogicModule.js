@@ -48,13 +48,13 @@ const waterCalculator = function(age, kilos) {
   if (age >= 0 && age < 16) {
     result = calculator.multiply(kilos, 0.035);
   } else if (age < 31) {
-    result = calculator.multiply(kilos * 0.040);
+    result = calculator.multiply(kilos, 0.040);
   } else if (age < 55) {
-    result = calculator.multiply(kilos * 0.035);
+    result = calculator.multiply(kilos, 0.035);
   } else if (age < 66) {
-    result = calculator.multiply(kilos * 0.030);
+    result = calculator.multiply(kilos, 0.030);
   } else {
-    result = calculator.multiply(kilos * 0.020);
+    result = calculator.multiply(kilos, 0.020);
   }
 
   return result;

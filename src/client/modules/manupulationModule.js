@@ -35,6 +35,18 @@ const manupulateDOM = function () {
       $('#result-calc-id').val('Result');
       $('#result').val('Result');
       $('.errClass').hide();
+
+      /* Clear first calculator */
+      $('#genderMale').prop('checked', false);
+      $('#genderFemale').prop('checked', false);
+      $('#ageId').val('');
+      $('#kilogramsId').val('');
+      $('#result').val('Result');
+
+      /* Clear second calculator */
+      $('#water-calc-id').val('');
+      $('#kilos-calc-id').val('');
+      $('#result-calc-id').val('Result');
     });
 
     // calculator for calories
@@ -46,7 +58,7 @@ const manupulateDOM = function () {
       const age = $('#ageId').val();
       const kilograms = $('#kilogramsId').val();
 
-      if (gender === undefined ) {
+      if (gender === undefined) {
         $('#genderError1').show();
         throw new exception.InvalidGenderException();
       }

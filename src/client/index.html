@@ -279,40 +279,39 @@
           <div class="card card-body">
             <h3 class="text-center mb-4">Calorie calculator: </h3>
 
-            <fieldset>
+            <fieldset id='form'>
               <div class="form-group has-error">
-
 
                 <div class="fl w-100">
                   <div class="fl w-25 pa2">Gender</div>
                   <div class="fl w-50 fv-plugins-icon-container"><label for="genderMale" class="lh-copy mr4"><input
-                        class="mr2" type="radio" name="gender" id="genderMale" value="male"> Male</label><i data-field="gender"
-                      class="fv-plugins-icon fv-plugins-icon-check"></i>
-                    <label for="genderFemale" class="lh-copy mr4"><input class="mr2" type="radio" name="gender" id="genderFemale"
-                        value="female"> Female</label>
-                    <label for="genderOther" class="lh-copy"><input class="mr2" type="radio" name="gender" id="genderOther"
-                        value="other"> Other</label>
+                        class="mr2" type="radio" required name="gender" id="genderMale" value="male"> Male</label><i
+                      data-field="gender" class="fv-plugins-icon fv-plugins-icon-check"></i>
+                    <label for="genderFemale" class="lh-copy mr4"><input class="mr2" type="radio" required name="gender"
+                        id="genderFemale" value="female"> Female</label>
                     <div class="fv-plugins-message-container"></div>
                   </div>
                 </div>
 
               </div>
               <div class="form-group has-success">
-                <input class="form-control input-lg" placeholder="Age" type="text">
+                <input id='ageId' class="form-control input-lg" placeholder="Age" type="number" min="1" max="120"
+                  required>
               </div>
               <div class="form-group has-success">
-                <input class="form-control input-lg" placeholder="Kilograms" type="text">
+                <input id='kilogramsId' class="form-control input-lg" placeholder="Kilograms" type="number" min="1" max="120"
+                  required>
               </div>
 
               <div>
-                <input class="btn btn-lg btn-primary btn-block" value="Calculate:" type="submit">
+                <input id='submit' class="btn btn-lg btn-primary btn-block" onclick="" value="Calculate:" type="submit">
               </div>
 
             </fieldset>
 
             <br>
             <div class="form-group has-success">
-              <input class="form-control input-lg" placeholder="Result" type="text">
+              <input id='result' class="form-control input-lg" value="Result" type="submit">
             </div>
 
           </div>
@@ -342,7 +341,7 @@
 
             <br>
             <div class="form-group has-success">
-              <input id="result-calc-id" class="form-control input-lg" placeholder="Result" >
+              <input id="result-calc-id" class="form-control input-lg" value="Result" type="submit">
             </div>
 
           </div>

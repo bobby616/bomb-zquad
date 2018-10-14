@@ -22,10 +22,41 @@ const manupulateDOM = function () {
       $('#about').removeClass('nav-item active');
       $('#calc').removeClass('nav-item active');
       $('#home').removeClass('nav-item active');
-
       $('#muscles').addClass('nav-item active');
       $('div.view').hide();
       $('#show-muscle-group-page').show();
+
+      const showVideo = function (id, videoId) {
+        $(id).on('click', function () {
+          $(videoId).toggle();
+        });
+      }
+      // button for abs
+      showVideo('#abs1', '#abs');
+
+      // button for back
+      showVideo('#back1', '#back');
+
+      // button for biceps
+      showVideo('#biceps1', '#biceps');
+
+      // button for calfs
+      showVideo('#calfs1', '#calfs');
+
+      // button for chest
+      showVideo('#chest1', '#chest');
+
+      // button for forearms
+      showVideo('#forearms1', '#forearms');
+
+      // button for shoulders
+      showVideo('#shoulders1', '#shoulders');
+
+      // button for legs
+      showVideo('#legs1', '#legs');
+
+      // button for triceps
+      showVideo('#triceps1', '#triceps');
     });
 
     // go to About us

@@ -19,15 +19,15 @@
   <!-- Custom styles for this template -->
   <link href="/src/client/resources/css/business-frontpage.css" rel="stylesheet">
 
+  <!-- testt -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
 
-  <!-- home-page -->
-
-
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(130, 111, 0);">
     <div class="container">
       <!-- <a class="navbar-brand" href="#">Bomb Zquad...</a> -->
       <a>
@@ -40,17 +40,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li id='exercise' class="nav-item active">
-            <a id="exercises" onclick="" class="nav-link btn" style="background-color:transparent">Exercises
+          <li id='home' class="nav-item active">
+            <a id="home" class="nav-link btn" style="background-color:transparent">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
+          <li id="muscles" class="nav-item">
+            <a id="muscle-groups" class="nav-link btn" style="background-color:transparent">Muscle groups</a>
+          </li>
           <li id="calc" class="nav-item">
-            <a id="calculations" onclick="" class="nav-link btn" style="background-color:transparent">Calculations</a>
+            <a id="calculations" class="nav-link btn" style="background-color:transparent">Calculators</a>
           </li>
           <li id='about' class="nav-item">
-            <a id="about-us" class="nav-link btn" style="background-color:transparent">About
-              us</a>
+            <a id="about-us" class="nav-link btn" style="background-color:transparent">About us</a>
           </li>
         </ul>
       </div>
@@ -59,12 +61,72 @@
 
   <!-- Header with Background Image -->
   <header>
-    <img class="card-img-top" src="/src/client/resources/images/hr-hw-san-antonio.jpg" alt="">
+    <img class="card-img-top" src="/src/client/resources/images/Your screen_ 1536x864.jpg" alt="">
   </header>
 
+  <!-- Home page -->
+  <div id="show-home-page" class="view">
+    <div class="container">
+
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="/src/client/resources/images/01_strive-for-progress.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">It is...</h4>
+              <p class="card-text">impossible to change your past,
+                But you can surely design your future!
+                So, don’t worry about your past,
+                <strong>Just think about your future!</strong></p>
+            </div>
+            <div class="card-footer">
+              <a href="https://www.youtube.com/watch?v=41Zjh3AirjU" class="btn btn-warning">Motivate yourself!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="/src/client/resources/images/just-because-you-couldnt-lift-it-yesterday-motivational-gym-quotes.jpg"
+              alt="">
+            <div class="card-body">
+              <h4 class="card-title">There are three mantras of success:</h4>
+              <p class="card-text">
+                1-Be determined!
+                <br> 2-Be patient!
+                <br>3-<strong>Never Compromise in Hard-work!</strong></p>
+            </div>
+            <div class="card-footer">
+              <a href="https://www.youtube.com/watch?v=yG7v4y_xwzQ" class="btn btn-warning">Good habits!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="/src/client/resources/images/Inspirational-Work-Quote-7.jpeg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Smile like a baby,</h4>
+              <p class="card-text">
+                Shine like a dew drop,
+                <br>Be confident like the sun,
+                <br>Fly like a butterfly,
+                <br>And trust me,
+                <br><strong>NO ONE CAN STOP YOU</strong> from being successful!</p>
+            </div>
+            <div class="card-footer">
+              <a href="https://www.youtube.com/watch?v=GDLkJ6-2EmI" class="btn btn-warning">Get started!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
 
   <!-- Page Content -->
-  <div id="show-home-page" class="view">
+  <div id="show-muscle-group-page" class="view" style="display:none">
     <div class="container">
 
       <!-- /.row -->
@@ -191,7 +253,6 @@
     </div>
     <!-- /.container -->
   </div>
-
 
   <!-- Page About us -->
   <div id="show-constact-us" class="view" style="display:none">
@@ -374,12 +435,15 @@
 
   </div>
 
-
   <!-- Footer -->
-  <footer class="py-2 bg-dark">
+  <footer class="py-2 " style="background-color: rgb(130, 111, 0);">
 
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright 2018 &copy; <a class="m-0 text-center text-white" href="https://www.youtube.com/watch?v=jTdQbJqBwCw">Bomb-Zquad.com</a></p>
+    <div class="container text-center">
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook" style="font-size: 40px; margin: 25px;"></i></a>
+      <a href="https://twitter.com/twitter?lang=bg"><i class="fa fa-twitter" style="font-size: 40px; margin: 25px;"></i></a>
+      <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin" style="font-size: 40px; margin: 25px;"></i></a>
+      <a href="https://plus.google.com/discover"><i class="fa fa-google-plus" style="font-size: 40px; margin: 25px;"></i></a>
+      <a href="https://www.skype.com/bg/"><i class="fa fa-skype" style="font-size: 40px; margin: 25px;"></i></a>
     </div>
 
   </footer>

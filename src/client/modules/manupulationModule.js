@@ -5,19 +5,36 @@ import * as calculator from '../modules/calculatorsLogicModule';
 
 const manupulateDOM = function () {
   $(document).ready(function () {
-    // back to Home
-    $('#exercises').on('click', function () {
+
+    // Go to Home page
+    $('#home').on('click', function () {
       $('#about').removeClass('nav-item active');
       $('#calc').removeClass('nav-item active');
-      $('#exercise').addClass('nav-item active');
+      $('#muscles').removeClass('nav-item active');
+
+      $('#home').addClass('nav-item active');
       $('div.view').hide();
       $('#show-home-page').show();
+    });
+
+    // go to Muscle groups
+    $('#muscle-groups').on('click', function () {
+      $('#about').removeClass('nav-item active');
+      $('#calc').removeClass('nav-item active');
+      $('#home').removeClass('nav-item active');
+
+      $('#muscles').addClass('nav-item active');
+      $('div.view').hide();
+      $('#show-muscle-group-page').show();
     });
 
     // go to About us
     $('#about-us').on('click', function () {
       $('#about').removeClass('nav-item');
       $('#calc').removeClass('nav-item active');
+      $('#muscles').removeClass('nav-item active');
+      $('#home').removeClass('nav-item active');
+
       $('#exercise').removeClass('nav-item active');
       $('#about').addClass('nav-item active');
       $('div.view').hide();
@@ -27,8 +44,10 @@ const manupulateDOM = function () {
     // go to Calculations
     $('#calculations').on('click', function () {
       $('#calc').removeClass('nav-item');
-      $('#exercise').removeClass('nav-item active');
+      $('#home').removeClass('nav-item active');
       $('#about').removeClass('nav-item active');
+      $('#muscles').removeClass('nav-item active');
+
       $('#calc').addClass('nav-item active');
       $('div.view').hide();
       $('#show-calculations').show();

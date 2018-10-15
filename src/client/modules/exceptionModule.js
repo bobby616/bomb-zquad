@@ -1,23 +1,23 @@
 const InvalidAgeException = function () {
-    return {
-        error: "This age is invalid!"
-    };
+  return {
+    error: 'This age is invalid!',
+  };
 };
 
 const InvalidWeightException = function () {
-    return {
-        error: "This weight is invalid!"
-    };
+  return {
+    error: 'This weight is invalid!',
+  };
 };
 
 const InvalidGenderException = function () {
-    return {
-        error: "Select a gender!"
-    };
+  return {
+    error: 'Select a gender!',
+  };
 };
 
 export {
-    InvalidAgeException,
-    InvalidWeightException,
-    InvalidGenderException,
+  InvalidAgeException,
+  InvalidWeightException,
+  InvalidGenderException,
 };

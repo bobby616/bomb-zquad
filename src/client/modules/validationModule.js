@@ -5,7 +5,7 @@ const areAgesValid = function (age) {
     if (age.length === 0) {
         return false;
     }
-    if(age <=0 || age>= 120){
+    if(age <=0 || age> 120){
         return false;
     }
     if (typeof (Number(age)) !== "number") {
@@ -23,7 +23,7 @@ const areKilosValid = function (kilos) {
     if (kilos.length === 0) {
         return false;
     }
-    if(kilos <=0 || kilos>=200){
+    if(kilos <=0 || kilos>200){
         return false;
     }
     if (typeof (Number(kilos)) !== "number") {

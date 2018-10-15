@@ -100,7 +100,6 @@ const manupulateDOM = function () {
     });
 
     // calculator for calories
-
     $('#submit').on('click', function () {
       $('.errClass').hide();
 
@@ -147,6 +146,16 @@ const manupulateDOM = function () {
       const result = calculator.waterCalculator(age, kilos);
 
       $('#result-calc-id').val(`The perfect amout of water intake for you is ${result.toFixed(2)} liters`);
+    });
+
+    $('#calorie-calc-btn-id').on('click', function () {
+      $('div.view-calculator').hide();
+      $('#first-calc-id').show();
+    });
+
+    $('#water-calculator-btn-id').on('click', function () {
+      $('div.view-calculator').hide();
+      $('#second-calc-id').show();
     });
   });
 };

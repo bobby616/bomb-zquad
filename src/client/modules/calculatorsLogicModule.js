@@ -20,7 +20,7 @@ const caloriesFunc = function calculate(gender, age, kilograms) {
       const coeff = calculator.multiply(13.5, kilograms);
       calories = calculator.add(coeff, 487);
     }
-  } else if (gender === 'female'){
+  } else if (gender === 'female') {
 
     if (age >= 3 && age <= 9) {
       const coeff = calculator.multiply(22.5, kilograms);
@@ -42,7 +42,7 @@ const caloriesFunc = function calculate(gender, age, kilograms) {
   return calories;
 };
 
-const waterCalculator = function(age, kilos) {
+const waterCalculator = function (age, kilos) {
   let result = 0;
 
   if (age >= 0 && age < 16) {

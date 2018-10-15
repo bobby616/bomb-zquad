@@ -394,8 +394,25 @@
   <!-- Page calculations -->
   <div id="show-calculations" class="view" style="display:none">
 
+    <div class="row" style="padding-top: 50px">
+
+      <div class="col-2"></div>
+      <div class="col-4 has-success">
+        <input id="calorie-calc-btn-id" class="btn btn-lg btn-warning btn-block" value="Calorie calculator:" type="submit"
+          style="color: white">
+      </div>
+
+      <div class="col-4 has-success">
+        <input id="water-calculator-btn-id" class="btn btn-lg btn-warning btn-block" value="Water calculator per day:" type="submit"
+          style="color: white">
+      </div>
+
+      <div class="col-4"></div>
+
+    </div>
+
     <!-- First Calculator -->
-    <div class="container-fluid bg-light py-3">
+    <div id="first-calc-id" class="container-fluid bg-light py-3 view-calculator">
 
       <div class="row">
         <div class="col-md-6 mx-auto">
@@ -457,7 +474,7 @@
     </div>
 
     <!-- Second Calculator -->
-    <div class="container-fluid bg-light py-3">
+    <div id="second-calc-id" class="container-fluid bg-light py-3 view-calculator" style="display:none">
       <div class="row">
         <div class="col-md-6 mx-auto">
           <div class="card card-body">
@@ -517,7 +534,6 @@
 
   </footer>
 
-
   <!-- Bootstrap core JavaScript -->
   <script>
     //ScrollReveal().reveal('.rev', { origin: 'bottom', distance: '100px', duration: 2000, });
@@ -540,12 +556,10 @@
         $('#back-to-top').tooltip('hide');
         $('body,html').animate({
           scrollTop: 0
-        }, 800);
+        }, 1000);
         return false;
       });
-
       $('#back-to-top').tooltip('show');
-
     });
   </script>
 

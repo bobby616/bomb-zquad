@@ -38,8 +38,9 @@
     <div class="container">
       <!-- <a class="navbar-brand" href="#">Bomb Zquad...</a> -->
       <a>
-        <img class="card-img-top" style="border-radius: 15%; width: 20%; height: auto;" src="/src/client/resources/images/Bomb squad.jpg"
-          alt="">
+        <audio id='audio1' src='/src/client/resources/audio/Bomb Zquad !.mp3'></audio>
+        <img class="card-img-top" onclick="document.getElementById('audio1').play()" style="border-radius: 15%; width: 20%; height: auto;"
+          src="/src/client/resources/images/Bomb squad.jpg" alt="">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -403,8 +404,8 @@
       </div>
 
       <div class="col-4 has-success">
-        <input id="water-calculator-btn-id" class="btn btn-lg btn-warning btn-block" value="Water calculator per day:" type="submit"
-          style="color: white">
+        <input id="water-calculator-btn-id" class="btn btn-lg btn-warning btn-block" value="Water calculator per day:"
+          type="submit" style="color: white">
       </div>
 
       <div class="col-4"></div>
@@ -536,7 +537,9 @@
 
   <!-- Bootstrap core JavaScript -->
   <script>
-    ScrollReveal().reveal('.reveal', { interval: 500 });
+    ScrollReveal().reveal('.reveal', {
+      interval: 500
+    });
   </script>
   <script src="/src/libraries/jquery/jquery.min.js"></script>
   <script src="/src/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>

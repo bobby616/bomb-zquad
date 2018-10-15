@@ -1,4 +1,3 @@
-import * as calculator from './calculationModule';
 import {
   maleRules,
   femaleRules,
